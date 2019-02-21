@@ -1,0 +1,56 @@
+<f:be.container
+        loadJQuery="1"
+        includeJsFiles="{0:'{f:uri.resource(path:\'Libs/DataTables/datatables.min.js\')}' }"
+        includeCssFiles="{0:'{f:uri.resource(path:\'Libs/DataTables/Bootstrap-3.3.6/css/bootstrap.min.css\')}', 1:'{f:uri.resource(path:\'Libs/DataTables/datatables.min.css\')}'}">
+    <div class="container">
+
+        <f:render partial="ModBeacontracking/Menu" arguments="{active:'index'}" />
+
+        <hr>
+
+        <h1><f:translate key="LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:modules.tracking.title"/></h1>
+
+        <hr>
+
+        <table id="tracking-data" class="table">
+            <thead>
+            <tr>
+                <th><f:translate key="LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:db.tracking.crdate"/></th>
+                <th><f:translate key="LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:db.tracking.crdate"/></th>
+                <th><f:translate key="LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:db.tracking.beacon"/></th>
+                <th><f:translate key="LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:db.tracking.mode"/></th>
+                <th><f:translate key="LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:db.tracking.device"/></th>
+                <th><f:translate key="LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:db.tracking.name"/></th>
+            </tr>
+            </thead>
+            <tbody>
+            <f:for each="{trackingObjects}" as="entry" reverse="1">
+                <tr>
+                    <td>
+                        <f:format.date format="d.m.Y - H:i:s">@{entry.crdate}</f:format.date>
+                    </td>
+                    <td>{entry.crdate}</td>
+                    <td>{entry.beacon.name}</td>
+                    <td>
+                        <f:translate
+                                key="LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:db.tracking.mode.{entry.mode}"/>
+                    </td>
+                    <td>{entry.device}</td>
+                    <td>{entry.name}</td>
+                </tr>
+            </f:for>
+            </tbody>
+        </table>
+
+        <script>
+            jQuery(document).ready(function () {
+                jQuery("#tracking-data").DataTable({
+                    "order": [[1, "desc"]],
+                    "columnDefs": [
+                        {targets: 1, visible: false, searchable: false, orderData: [1]}
+                    ]
+                })
+            });
+        </script>
+    </div>
+</f:be.container>

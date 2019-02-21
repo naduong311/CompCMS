@@ -1,0 +1,14 @@
+<ul class="nav nav-pills">
+    <li role="presentation" {f:if(condition:
+    '{active} == \'index\'', then: 'class="active"')}>
+    <f:link.action action="index">
+        <f:translate key="LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:mod_tracking.menu.data"/>
+    </f:link.action>
+    </li>
+    <li role="presentation" {f:if(condition:
+    '{active} == \'analytics\'', then: 'class="active"')}>
+    <f:link.action action="analytics">
+        <f:translate key="LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:mod_tracking.menu.analytics"/>
+    </f:link.action>
+    </li>
+</ul>

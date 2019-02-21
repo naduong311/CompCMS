@@ -1,0 +1,29 @@
+# customcategory=tx_bcms=LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:config.cat.bcms
+
+# customsubcategory=100=LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:config.subcat.defaultvalues
+
+plugin.tx_bcms {
+
+	view {
+		# cat=plugin.tx_bcms/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:bcms/Resources/Private/Templates/
+		# cat=plugin.tx_bcms/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:bcms/Resources/Private/Partials/
+		# cat=plugin.tx_bcms/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:bcms/Resources/Private/Layouts/
+	}
+
+	persistence {
+		# cat=plugin.tx_bcms/persistence/0; type=string; label=Default storage PID
+		storagePid =
+	}
+
+	settings {
+		defaultvalues {
+			# cat=plugin.tx_bcms/100/nopage; type=int; label=LLL:EXT:bcms/Resources/Private/Language/locallang_db.xlf:config.defaultvalues.nopage
+			nopage =
+		}
+	}
+}
+
+

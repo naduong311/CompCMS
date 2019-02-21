@@ -1,0 +1,37 @@
+<f:for each="{beacons}" as="beacon">
+    <h3>{beacon.name}</h3>
+    <div class="well well-sm">
+        <div class="row">
+            <div class="col col-sm-3">
+                <label>Identification</label>
+            </div>
+            <div class="col col-sm-9">
+                <code>{beacon.uuid}:{beacon.major}:{beacon.minor}</code>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm-3">
+                <label>Notification</label>
+            </div>
+            <div class="col col-sm-9">
+                {beacon.notificationText}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm-3">
+                <label>Description</label>
+            </div>
+            <div class="col col-sm-9">
+                {beacon.description}
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-sm-3">
+                <label>Linked Page</label>
+            </div>
+            <div class="col col-sm-9">
+                <f:link.page pageUid="{beacon.page}" absolute="1"><f:uri.page pageUid="{beacon.page}" absolute="1" /></f:link.page>
+            </div>
+        </div>
+    </div>
+</f:for>

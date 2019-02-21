@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-06-17T16:25:57Z" product-name="Dekramedia.Lms">
+		<header/>
+		<body>
+			<trans-unit id="plugins.administration.title">
+				<source>Beacon Administration</source>
+			</trans-unit>
+
+			<trans-unit id="modules.tracking.title">
+				<source>Beacon Tracking</source>
+			</trans-unit>
+
+			<trans-unit id="mod_tracking.title.generalstats">
+				<source>General Statistics</source>
+			</trans-unit>
+			<trans-unit id="mod_tracking.label.trackingEvents">
+				<source>Tracking Events</source>
+			</trans-unit>
+			<trans-unit id="mod_tracking.label.noticeEvents">
+				<source>Notice Events</source>
+			</trans-unit>
+			<trans-unit id="mod_tracking.label.dataFetchEvents">
+				<source>Data Fetch Events</source>
+			</trans-unit>
+			<trans-unit id="mod_tracking.label.devices">
+				<source>Devices</source>
+			</trans-unit>
+			<trans-unit id="mod_tracking.label.users">
+				<source>Users</source>
+			</trans-unit>
+
+			<trans-unit id="mod_tracking.menu.data">
+				<source>Tracking Data</source>
+			</trans-unit>
+			<trans-unit id="mod_tracking.menu.analytics">
+				<source>Analytics</source>
+			</trans-unit>
+
+			<trans-unit id="mod_tracking.title.beaconstats">
+				<source>General Statistics</source>
+			</trans-unit>
+
+			<trans-unit id="config.cat.bcms">
+				<source>Beacon DB</source>
+			</trans-unit>
+			<trans-unit id="config.subcat.defaultvalues">
+				<source>Default Values</source>
+			</trans-unit>
+			<trans-unit id="config.defaultvalues.nopage">
+				<source>Default Page: Default page to show for an unknown beacon or a beacon without an assigned page.</source>
+			</trans-unit>
+
+
+			<trans-unit id="db.beacon">
+				<source>Beacon</source>
+			</trans-unit>
+			<trans-unit id="db.beacon.name">
+				<source>Beacon Name</source>
+			</trans-unit>
+			<trans-unit id="db.beacon.hidden">
+				<source>Disable Beacon</source>
+			</trans-unit>
+			<trans-unit id="db.beacon.uuid">
+				<source>Beacon UUID</source>
+			</trans-unit>
+			<trans-unit id="db.beacon.major">
+				<source>Beacon Major ID</source>
+			</trans-unit>
+			<trans-unit id="db.beacon.minor">
+				<source>Beacon Minor ID</source>
+			</trans-unit>
+			<trans-unit id="db.beacon.notification_text">
+				<source>Notification text</source>
+			</trans-unit>
+			<trans-unit id="db.beacon.description">
+				<source>Description text</source>
+			</trans-unit>
+			<trans-unit id="db.beacon.page">
+				<source>Linked Page</source>
+			</trans-unit>
+			<trans-unit id="db.page.beacons">
+				<source>Beacons</source>
+			</trans-unit>
+
+			<trans-unit id="db.tracking">
+				<source>Beacon Tracking Data</source>
+			</trans-unit>
+			<trans-unit id="db.tracking.crdate">
+				<source>Date</source>
+			</trans-unit>
+			<trans-unit id="db.tracking.beacon">
+				<source>Beacon</source>
+			</trans-unit>
+			<trans-unit id="db.tracking.device">
+				<source>Device ID</source>
+			</trans-unit>
+			<trans-unit id="db.tracking.name">
+				<source>User name</source>
+			</trans-unit>
+			<trans-unit id="db.tracking.mode">
+				<source>Tracking mode</source>
+			</trans-unit>
+			<trans-unit id="db.tracking.mode.0">
+				<source>Unknown</source>
+			</trans-unit>
+			<trans-unit id="db.tracking.mode.1">
+				<source>Beacon encountered</source>
+			</trans-unit>
+			<trans-unit id="db.tracking.mode.2">
+				<source>Beacon data fetched</source>
+			</trans-unit>
+
+			<trans-unit id="db.answer">
+				<source>User answers</source>
+			</trans-unit>
+			<trans-unit id="db.answer.question">
+				<source>Question</source>
+			</trans-unit>
+			<trans-unit id="db.answer.choices">
+				<source>Choices</source>
+			</trans-unit>
+			<trans-unit id="db.answer.user">
+				<source>User</source>
+			</trans-unit>
+			<trans-unit id="db.answer.correct">
+				<source>Correct</source>
+			</trans-unit>
+
+			<trans-unit id="db.question">
+				<source>Comprehension Test Question</source>
+			</trans-unit>
+			<trans-unit id="db.question.comprehensiontest">
+				<source>Comprehensiontest</source>
+			</trans-unit>
+			<trans-unit id="db.question.question">
+				<source>Questiontext</source>
+			</trans-unit>
+			<trans-unit id="db.question.choices">
+				<source>Choices</source>
+			</trans-unit>
+
+			<trans-unit id="db.comprehensiontest">
+				<source>Comprehension Test</source>
+			</trans-unit>
+			<trans-unit id="db.comprehensiontest.questions">
+				<source>Comprehension Test Questions</source>
+			</trans-unit>
+
+			<trans-unit id="db.choice">
+				<source>Choice</source>
+			</trans-unit>
+			<trans-unit id="db.choice.question">
+				<source>Question</source>
+			</trans-unit>
+			<trans-unit id="db.choice.content">
+				<source>Content</source>
+			</trans-unit>
+			<trans-unit id="db.choice.correct">
+				<source>Correct</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

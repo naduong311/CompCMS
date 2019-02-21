@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2013-06-17T16:25:57Z" product-name="Dekramedia.Lms">
+		<header/>
+		<body>
+			<trans-unit id="plugins.administration.title">
+				<target>Beacon-Administration</target>
+			</trans-unit>
+			<trans-unit id="modules.tracking.title">
+				<target>Beacon Tracking</target>
+			</trans-unit>
+
+			<trans-unit id="mod_tracking.title.generalstats">
+				<target>Allgemeine Statistik</target>
+			</trans-unit>
+			<trans-unit id="mod_tracking.label.trackingEvents">
+				<target>Tracking</target>
+			</trans-unit>
+			<trans-unit id="mod_tracking.label.noticeEvents">
+				<target>Annäherungen</target>
+			</trans-unit>
+			<trans-unit id="mod_tracking.label.dataFetchEvents">
+				<target>Datenabrufe</target>
+			</trans-unit>
+			<trans-unit id="mod_tracking.label.devices">
+				<target>Geräte</target>
+			</trans-unit>
+			<trans-unit id="mod_tracking.label.users">
+				<target>Benutzer</target>
+			</trans-unit>
+
+			<trans-unit id="mod_tracking.menu.data">
+				<target>Trackingdaten</target>
+			</trans-unit>
+			<trans-unit id="mod_tracking.menu.analytics">
+				<target>Analysewerkzeug</target>
+			</trans-unit>
+
+			<trans-unit id="mod_tracking.title.beaconstats">
+				<target>Beacon-Statistik</target>
+			</trans-unit>
+
+			<trans-unit id="config.cat.bcms">
+				<target>Beacon DB</target>
+			</trans-unit>
+			<trans-unit id="config.subcat.defaultvalues">
+				<target>Standardwerte</target>
+			</trans-unit>
+			<trans-unit id="config.defaultvalues.nopage">
+				<target>Standard-Seite: Seite, die angezeigt wird, wenn der Beacon nicht gefunden wurde oder keine Seitenverknüpfung enthält.</target>
+			</trans-unit>
+
+
+			<trans-unit id="db.beacon">
+				<target>Beacon</target>
+			</trans-unit>
+			<trans-unit id="db.beacon.name">
+				<target>Name des Beacons</target>
+			</trans-unit>
+			<trans-unit id="db.beacon.hidden">
+				<target>Beacon deaktivieren</target>
+			</trans-unit>
+			<trans-unit id="db.beacon.uuid">
+				<target>Beacon UUID</target>
+			</trans-unit>
+			<trans-unit id="db.beacon.major">
+				<target>Beacon Major ID</target>
+			</trans-unit>
+			<trans-unit id="db.beacon.minor">
+				<target>Beacon Minor ID</target>
+			</trans-unit>
+			<trans-unit id="db.beacon.notification_text">
+				<target>Benachrichtigungstext</target>
+			</trans-unit>
+			<trans-unit id="db.beacon.description">
+				<target>Beschreibungstext</target>
+			</trans-unit>
+			<trans-unit id="db.beacon.page">
+				<target>verknüpfte Seite</target>
+			</trans-unit>
+			<trans-unit id="db.page.beacons">
+				<target>Beacons</target>
+			</trans-unit>
+
+
+			<trans-unit id="db.tracking">
+				<target>Beacon-Trackingdaten</target>
+			</trans-unit>
+			<trans-unit id="db.tracking.crdate">
+				<target>Datum</target>
+			</trans-unit>
+			<trans-unit id="db.tracking.beacon">
+				<target>Beacon</target>
+			</trans-unit>
+			<trans-unit id="db.tracking.device">
+				<target>Device ID</target>
+			</trans-unit>
+			<trans-unit id="db.tracking.name">
+				<target>Benutzername</target>
+			</trans-unit>
+			<trans-unit id="db.tracking.mode">
+				<target>Trackingmodus</target>
+			</trans-unit>
+			<trans-unit id="db.tracking.mode.0">
+				<target>Unbekannt</target>
+			</trans-unit>
+			<trans-unit id="db.tracking.mode.1">
+				<target>Beacon angenähert</target>
+			</trans-unit>
+			<trans-unit id="db.tracking.mode.2">
+				<target>Daten abgerufen</target>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

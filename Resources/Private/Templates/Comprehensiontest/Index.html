@@ -1,0 +1,6 @@
+<f:for each="{questions}" as="question">
+	<p>Question: {question.question}</p>
+	<f:for each="{question.choices}" as="choice">
+		<div><input type="checkbox" value="{choice.uid}"> <label>{choice.content}</label></div>
+	</f:for>
+</f:for>

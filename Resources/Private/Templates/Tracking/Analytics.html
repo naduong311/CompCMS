@@ -1,0 +1,87 @@
+<f:be.container
+        loadJQuery="1"
+        includeJsFiles="{0:'{f:uri.resource(path:\'Libs/DataTables/datatables.min.js\')}' }"
+        includeCssFiles="{0:'{f:uri.resource(path:\'Libs/DataTables/Bootstrap-3.3.6/css/bootstrap.min.css\')}', 1:'{f:uri.resource(path:\'Libs/DataTables/datatables.min.css\')}'}">
+    <div class="container">
+        <f:render partial="ModBeacontracking/Menu" arguments="{active:'analytics'}"/>
+
+        <hr>
+
+        <h1><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:modules.tracking.title"/></h1>
+
+        <hr>
+
+        <div class="row">
+            <div class="col-md-5">
+                <h2><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:mod_tracking.title.generalstats"/></h2>
+                <div class="well">
+                    <div class="form-horizontal">
+                        <div class="form-group">
+                            <label for="numTrackingEvents" class="col-xs-6 control-label"><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:mod_tracking.label.trackingEvents"/></label>
+                            <div class="col-xs-6">
+                                <p id="numTrackingEvents" class="form-control-static">{data.numTrackingEvents}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="numNoticeEvents" class="col-xs-6 control-label"><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:mod_tracking.label.noticeEvents"/></label>
+                            <div class="col-xs-6">
+                                <p id="numNoticeEvents" class="form-control-static">{data.numNoticeEvents}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="numDataFetchEvents" class="col-xs-6 control-label"><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:mod_tracking.label.dataFetchEvents"/></label>
+                            <div class="col-xs-6">
+                                <p id="numDataFetchEvents" class="form-control-static">{data.numDataFetchEvents}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="numDistinctDevices" class="col-xs-6 control-label"><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:mod_tracking.label.devices"/></label>
+                            <div class="col-xs-6">
+                                <p id="numDistinctDevices" class="form-control-static">{data.numDistinctDevices}</p>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="numDistinctUsers" class="col-xs-6 control-label"><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:mod_tracking.label.users"/></label>
+                            <div class="col-xs-6">
+                                <p id="numDistinctUsers" class="form-control-static">{data.numDistinctUsers}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <h2><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:mod_tracking.title.beaconstats"/></h2>
+                <div class="well">
+                    <table id="beacon-statistics" class="table">
+                        <thead>
+                        <tr>
+                            <th><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:db.tracking.beacon"/></th>
+                            <th><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:mod_tracking.label.trackingEvents"/></th>
+                            <th><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:mod_tracking.label.noticeEvents"/></th>
+                            <th><f:translate key="LLL:EXT:beacondb/Resources/Private/Language/locallang_db.xlf:mod_tracking.label.dataFetchEvents"/></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <f:for each="{data.beaconStatistics}" as="entry">
+                            <tr>
+                                <td>
+                                    {entry.beacon.name}
+                                </td>
+                                <td>{entry.events.all}</td>
+                                <td>{entry.events.notice}</td>
+                                <td>{entry.events.dataFetch}</td>
+                            </tr>
+                        </f:for>
+                        </tbody>
+                    </table>
+
+                    <script>
+                        jQuery(document).ready(function () {
+                            jQuery("#beacon-statistics").DataTable()
+                        });
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</f:be.container>
